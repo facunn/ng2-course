@@ -1,0 +1,7 @@
+<div *ngIf="data">
+    <ul>
+        <li *ngFor="let item of data" (click)="gotoDetail(item)" id="{{item.id}}">
+                {{item.first_name}}
+        </li>
+    </ul>
+</div>
